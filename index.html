@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Áreas</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Link para os ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-ruler-combined"></i> Calculadora de Áreas</h1>
+
+    <div class="form-group">
+      <label for="forma"><i class="fa-solid fa-shapes"></i> Forma Geométrica:</label>
+      <select id="forma">
+        <option value="triangulo">▲ Triângulo</option>
+        <option value="retangulo">▭ Retângulo</option>
+        <option value="quadrado">■ Quadrado</option>
+      </select>
+    </div>
+
+    <div id="inputs" class="form-group"></div>
+
+    <button onclick="calcularArea()"><i class="fa-solid fa-calculator"></i> Calcular Área</button>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
